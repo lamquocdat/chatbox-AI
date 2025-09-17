@@ -1,0 +1,69 @@
+{
+  "name": "ai-chatbox-electron",
+  "version": "1.0.0",
+  "description": "HSE R&D - AI Chatbox Desktop Application",
+  "publisher": "HSE R&D",
+  "main": "dist-electron/main.js",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:electron": "tsc -p electron",
+    "build:exe": "npm run build && npm run build:electron && npx electron-builder --win --config.forceCodeSigning=false",
+    "start": "electron .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "auto-launch": "^5.0.6",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.446.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/auto-launch": "^5.0.5",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "electron": "^32.0.1",
+    "electron-builder": "^25.0.5",
+    "eslint": "^9.10.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.7"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "build": {
+    "appId": "com.yourcompany.ai-chatbox",
+    "productName": "AI Chatbox",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "public/logo/**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "public/logo/build-icon.ico",
+      "executableName": "AI Chatbox"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AI Chatbox"
+    },
+    "forceCodeSigning": false
+  }
+}
