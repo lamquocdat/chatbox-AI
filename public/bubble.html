@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Chatbox Bubble</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      width: 80px;
-      height: 80px;
-      background: transparent;
-      overflow: hidden;
-      user-select: none;
-      -webkit-app-region: drag; /* Toàn bộ có thể kéo */
-      cursor: grab;
-      font-family: system-ui, -apple-system, sans-serif;
-    }
-    
-    body:active {
-      cursor: grabbing;
-    }
-    
-    .bubble {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
-      position: relative;
-      opacity: 0.3; /* Mờ hơn mặc định */
-      /* Không có -webkit-app-region: no-drag để có thể kéo */
-    }
-    
-    .bubble:hover {
-      transform: scale(1.1);
-      opacity: 1; /* Rõ ràng khi hover */
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-    }
-    
-    .bubble:hover {
-      transform: scale(1.1);
-      opacity: 1; /* Rõ ràng khi hover */
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-    }
-    
-    .bubble:active {
-      transform: scale(0.95);
-    }
-    
-    .bubble-inner {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(10px);
-      -webkit-app-region: no-drag; /* Chỉ vùng này không drag để có thể click */
-      cursor: pointer;
-    }
-    
-    .bubble-icon {
-      width: 24px;
-      height: 24px;
-      fill: white;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-      pointer-events: none; /* Icon không chặn click */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPT PC Assistant Bubble</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 80px;
+            height: 80px;
+            background: transparent;
+            overflow: hidden;
+            user-select: none;
+            -webkit-app-region: drag;
+            /* Toàn bộ có thể kéo */
+            cursor: grab;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body:active {
+            cursor: grabbing;
+        }
+
+        .bubble {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            opacity: 0.3;
+            /* Mờ hơn mặc định */
+            /* Không có -webkit-app-region: no-drag để có thể kéo */
+        }
+
+        .bubble:hover {
+            transform: scale(1.1);
+            opacity: 1;
+            /* Rõ ràng khi hover */
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .bubble:hover {
+            transform: scale(1.1);
+            opacity: 1;
+            /* Rõ ràng khi hover */
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .bubble:active {
+            transform: scale(0.95);
+        }
+
+        .bubble-inner {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            -webkit-app-region: no-drag;
+            /* Chỉ vùng này không drag để có thể click */
+            cursor: pointer;
+        }
+
+        .bubble-icon {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            pointer-events: none;
+            /* Icon không chặn click */
+        }
+    </style>
 </head>
+
 <body>
-  <div class="bubble">
-    <div class="bubble-inner">
-      <!-- Chat icon using SVG -->
-      <svg class="bubble-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.3596 22 8.77516 21.6039 7.35448 20.8799L3.5 22L4.12006 18.2455C3.39606 16.8248 3 15.2404 3 13.5C3 7.97715 7.47715 3.5 13 3.5C18.5228 3.5 23 7.97715 23 13.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="8" cy="12" r="1" fill="currentColor"/>
-        <circle cx="12" cy="12" r="1" fill="currentColor"/>
-        <circle cx="16" cy="12" r="1" fill="currentColor"/>
-      </svg>
+    <div class="bubble">
+        <div class="bubble-inner">
+            <!-- Chat icon using SVG -->
+            <svg class="bubble-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.3596 22 8.77516 21.6039 7.35448 20.8799L3.5 22L4.12006 18.2455C3.39606 16.8248 3 15.2404 3 13.5C3 7.97715 7.47715 3.5 13 3.5C18.5228 3.5 23 7.97715 23 13.5Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="8" cy="12" r="1" fill="currentColor" />
+                <circle cx="12" cy="12" r="1" fill="currentColor" />
+                <circle cx="16" cy="12" r="1" fill="currentColor" />
+            </svg>
+        </div>
     </div>
-  </div>
-  
-  <script>
-    let isDragging = false;
-    let startX, startY;
-    
-    function openMainWindow() {
-      if (window.electronAPI) {
-        window.electronAPI.showMainWindow();
-      }
-    }
-    
-    // Handle click vs drag cho bubble-inner (vùng có thể click)
-    const bubbleInner = document.querySelector('.bubble-inner');
-    
-    bubbleInner.addEventListener('mousedown', (e) => {
-      isDragging = false;
-      startX = e.clientX;
-      startY = e.clientY;
-    });
-    
-    bubbleInner.addEventListener('mousemove', (e) => {
-      if (Math.abs(e.clientX - startX) > 5 || Math.abs(e.clientY - startY) > 5) {
-        isDragging = true;
-      }
-    });
-    
-    bubbleInner.addEventListener('mouseup', (e) => {
-      if (!isDragging) {
-        // Đây là click, không phải drag
-        openMainWindow();
-      }
-      isDragging = false;
-    });
-    
-    bubbleInner.addEventListener('click', (e) => {
-      if (!isDragging) {
-        openMainWindow();
-      }
-    });
-    
-    // Debug
-    console.log('Bubble window loaded');
-    console.log('electronAPI available:', !!window.electronAPI);
-  </script>
+
+    <script>
+        let isDragging = false;
+        let startX, startY;
+
+        function openMainWindow() {
+            if (window.electronAPI) {
+                window.electronAPI.showMainWindow();
+            }
+        }
+
+        // Handle click vs drag cho bubble-inner (vùng có thể click)
+        const bubbleInner = document.querySelector('.bubble-inner');
+
+        bubbleInner.addEventListener('mousedown', (e) => {
+            isDragging = false;
+            startX = e.clientX;
+            startY = e.clientY;
+        });
+
+        bubbleInner.addEventListener('mousemove', (e) => {
+            if (Math.abs(e.clientX - startX) > 5 || Math.abs(e.clientY - startY) > 5) {
+                isDragging = true;
+            }
+        });
+
+        bubbleInner.addEventListener('mouseup', (e) => {
+            if (!isDragging) {
+                // Đây là click, không phải drag
+                openMainWindow();
+            }
+            isDragging = false;
+        });
+
+        bubbleInner.addEventListener('click', (e) => {
+            if (!isDragging) {
+                openMainWindow();
+            }
+        });
+
+        // Debug
+        console.log('Bubble window loaded');
+        console.log('electronAPI available:', !!window.electronAPI);
+    </script>
 </body>
+
 </html>

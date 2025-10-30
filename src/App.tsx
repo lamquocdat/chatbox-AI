@@ -1,7 +1,12 @@
-import HomePage from './pages/HomePage';
+import Pages from './routers';
+import { ThemeProvider } from './contexts/theme';
 
 function App() {
-  return <HomePage />;
+    return (
+        <ThemeProvider>
+            <Pages />
+        </ThemeProvider>
+    );
 }
 
 export default App;

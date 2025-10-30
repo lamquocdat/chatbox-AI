@@ -1,0 +1,88 @@
+{
+    "common": {
+        "hpt": "HPT",
+        "assistant": "Assistant",
+        "settings": "Settings",
+        "close": "Close",
+        "dark": "Dark",
+        "light": "Light",
+        "logout": "Logout"
+    },
+    "sidebar": {
+        "title": "HPT Assistant",
+        "newConversation": "New Conversation",
+        "noConversations": "No conversations yet",
+        "toggleSidebar": "Close sidebar"
+    },
+    "welcome": {
+        "title": "HPT PC Assistant",
+        "subtitle": "Your intelligent personal desktop assistant - Supporting you in all daily tasks",
+        "startConversation": "Start Conversation",
+        "features": {
+            "smartAssistant": {
+                "title": "Smart Assistant",
+                "description": "Assists you in daily tasks with contextual understanding and learning from your habits."
+            },
+            "fastResponse": {
+                "title": "Fast Response",
+                "description": "Experience fast processing speed and smooth interface without lag."
+            },
+            "secure": {
+                "title": "Absolute Security",
+                "description": "All conversations are stored locally on your computer, ensuring privacy."
+            },
+            "multiLanguage": {
+                "title": "Multi-language",
+                "description": "Natural communication in multiple languages with high accuracy."
+            }
+        }
+    },
+    "settings": {
+        "title": "Settings",
+        "systemStartup": {
+            "title": "System Startup",
+            "startWithSystem": "Start with system",
+            "description": "Automatically start HPT PC Assistant when your computer boots up"
+        },
+        "language": {
+            "title": "Language",
+            "vietnamese": "Vietnamese",
+            "english": "English"
+        }
+    },
+    "button": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "send": "Send",
+        "refresh": "Refresh",
+        "copy": "Copy",
+        "retry": "Retry",
+        "rename": "Rename",
+        "delete": "Delete",
+        "seeMore": "See More",
+        "retryLoadingMessages": "Retry loading messages"
+    },
+    "input": {
+        "message": "Type your message..."
+    },
+    "chat": {
+        "typeMessage": "Type your message...",
+        "send": "Send",
+        "aiErrorMessage": "I cannot answer this message right now, please try again later",
+        "videoNotSupported": "Video files are not supported. Please only upload images or documents.",
+        "attachFile": "Attach file",
+        "speechToText": "Speech to text",
+        "minimizeToBubble": "Minimize to bubble",
+        "openSidebar": "Open sidebar",
+        "loading": "Loading"
+    },
+    "toast": {
+        "copiedToClipboard": "Copied to clipboard",
+        "failedToCopy": "Failed to copy",
+        "failedToRename": "Failed to rename conversation",
+        "failedToLoadConversations": "Failed to load conversations",
+        "failedToLoadMessages": "Failed to load more messages",
+        "pleaseWait": "Please wait for the current message to finish",
+        "cannotDownloadFile": "Cannot download file"
+    }
+}

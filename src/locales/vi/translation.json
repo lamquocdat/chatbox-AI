@@ -1,0 +1,88 @@
+{
+    "common": {
+        "hpt": "HPT",
+        "assistant": "Trợ lý",
+        "settings": "Cài đặt",
+        "close": "Đóng",
+        "dark": "Tối",
+        "light": "Sáng",
+        "logout": "Đăng xuất"
+    },
+    "sidebar": {
+        "title": "HPT Trợ lý",
+        "newConversation": "Tạo cuộc hội thoại",
+        "noConversations": "Chưa có cuộc hội thoại nào",
+        "toggleSidebar": "Đóng sidebar"
+    },
+    "welcome": {
+        "title": "HPT PC Assistant",
+        "subtitle": "Trợ lý cá nhân thông minh trên máy tính - Hỗ trợ bạn trong mọi công việc hàng ngày",
+        "startConversation": "Bắt đầu trò chuyện",
+        "features": {
+            "smartAssistant": {
+                "title": "Trợ lý thông minh",
+                "description": "Hỗ trợ bạn trong các tác vụ hàng ngày với khả năng hiểu ngữ cảnh và học hỏi từ thói quen của bạn."
+            },
+            "fastResponse": {
+                "title": "Phản hồi nhanh",
+                "description": "Trải nghiệm tốc độ xử lý nhanh chóng và giao diện mượt mà, không giật lag."
+            },
+            "secure": {
+                "title": "Bảo mật tuyệt đối",
+                "description": "Mọi cuộc hội thoại được lưu trữ cục bộ trên máy tính của bạn, đảm bảo quyền riêng tư."
+            },
+            "multiLanguage": {
+                "title": "Đa ngôn ngữ",
+                "description": "Giao tiếp tự nhiên bằng nhiều ngôn ngữ khác nhau với độ chính xác cao."
+            }
+        }
+    },
+    "settings": {
+        "title": "Cài đặt",
+        "systemStartup": {
+            "title": "Khởi động hệ thống",
+            "startWithSystem": "Khởi động cùng hệ thống",
+            "description": "Tự động khởi động HPT PC Assistant khi máy tính khởi động"
+        },
+        "language": {
+            "title": "Ngôn ngữ",
+            "vietnamese": "Tiếng Việt",
+            "english": "Tiếng Anh"
+        }
+    },
+    "button": {
+        "cancel": "Hủy",
+        "save": "Lưu",
+        "send": "Gửi",
+        "refresh": "Làm mới",
+        "copy": "Sao chép",
+        "retry": "Thử lại",
+        "rename": "Đổi tên",
+        "delete": "Xóa",
+        "seeMore": "Xem thêm",
+        "retryLoadingMessages": "Thử tải lại tin nhắn"
+    },
+    "input": {
+        "message": "Nhập tin nhắn..."
+    },
+    "chat": {
+        "typeMessage": "Nhập tin nhắn...",
+        "send": "Gửi",
+        "aiErrorMessage": "Hiện tại tôi không thể trả lời tin nhắn này, vui lòng thử lại sau",
+        "videoNotSupported": "Không hỗ trợ tệp video. Vui lòng chỉ tải lên hình ảnh hoặc tài liệu.",
+        "attachFile": "Đính kèm tệp",
+        "speechToText": "Chuyển giọng nói thành văn bản",
+        "minimizeToBubble": "Thu nhỏ thành bong bóng",
+        "openSidebar": "Mở sidebar",
+        "loading": "Đang tải"
+    },
+    "toast": {
+        "copiedToClipboard": "Đã sao chép",
+        "failedToCopy": "Sao chép thất bại",
+        "failedToRename": "Đổi tên thất bại",
+        "failedToLoadConversations": "Tải cuộc hội thoại thất bại",
+        "failedToLoadMessages": "Tải tin nhắn thất bại",
+        "pleaseWait": "Vui lòng đợi tin nhắn hiện tại hoàn tất",
+        "cannotDownloadFile": "Không thể tải tệp"
+    }
+}

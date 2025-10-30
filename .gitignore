@@ -1,6 +1,6 @@
 # Dependencies
 node_modules/
-
+package-lock.json
 # Build outputs
 dist/
 dist-electron/
@@ -44,6 +44,7 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
+.env.production
 
 # next.js build output
 .next
